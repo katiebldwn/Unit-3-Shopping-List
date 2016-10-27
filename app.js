@@ -6,12 +6,12 @@ $('.submitButton').click(function() {
 
 
 //$('.shopping-item-delete').click(function() {
-$('.shopping-item-delete').on('click', function() {
+$(document).on('click', '.shopping-item-delete', function() {
 	$(this).closest('li').remove();
 });
 
 
-$('.shopping-item-toggle').on('click', function() {
+$(document).on('click', '.shopping-item-toggle', function() {
 	$(this).parent('div').parent('li').children('span').toggleClass('shopping-item__checked');
 });
 
